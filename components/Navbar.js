@@ -8,8 +8,13 @@ export default function Navbar() {
   console.log(user);
   return (
     <div className="container">
+      <div className="banner">
+        <Image src="/banner.png" width={966} height={120} />
+      </div>
       <nav>
+      
         <h1 className="logo">Web Dev Senior</h1>
+        
         <ul>
           <li>
             <Link href="/">
@@ -45,9 +50,7 @@ export default function Navbar() {
           )}
         </ul>
       </nav>
-      <div className="banner">
-        <Image src="/banner.png" width={966} height={200} />
-      </div>
+      
     </div>
   );
 }
